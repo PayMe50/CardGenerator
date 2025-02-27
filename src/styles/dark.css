@@ -1,0 +1,48 @@
+:root {
+  --el-bg-color: #ffffff;
+  --el-bg-color-overlay: #ffffff;
+  --el-text-color-primary: #303133;
+  --el-text-color-regular: #606266;
+  --el-border-color-light: #e4e7ed;
+  --el-fill-color-blank: #ffffff;
+}
+
+html.dark {
+  --el-bg-color: #141414;
+  --el-bg-color-overlay: #1d1e1f;
+  --el-text-color-primary: #ffffff;
+  --el-text-color-regular: #cfd3dc;
+  --el-border-color-light: #363637;
+  --el-fill-color-blank: #1d1e1f;
+  color-scheme: dark;
+}
+
+.dark .el-button {
+  --el-button-bg-color: #1d1e1f;
+  --el-button-text-color: #ffffff;
+  --el-button-border-color: #363637;
+  --el-button-hover-text-color: #409eff;
+  --el-button-hover-bg-color: #18222c;
+  --el-button-hover-border-color: #409eff;
+  --el-button-active-text-color: #3a8ee6;
+}
+
+.dark .el-input {
+  --el-input-bg-color: #1d1e1f;
+  --el-input-text-color: #ffffff;
+  --el-input-border-color: #363637;
+}
+
+.dark .el-textarea {
+  --el-input-bg-color: #1d1e1f;
+  --el-input-text-color: #ffffff;
+  --el-input-border-color: #363637;
+}
+
+.dark .el-radio {
+  --el-radio-text-color: #ffffff;
+}
+
+.dark .el-form-item__label {
+  color: var(--el-text-color-regular);
+}
