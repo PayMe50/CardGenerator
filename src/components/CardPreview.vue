@@ -140,9 +140,10 @@ const textColor = computed(() => {
 
 const formatNumber = (num: string) => {
   const n = parseInt(num, 10)
-  if (n >= 10000) {
-    const value = (n / 10000).toFixed(1)
-    return value.endsWith('.0') ? value.slice(0, -2) + '万' : value + '万'
+  if (n >= 1000000) {
+    return (n / 1000000).toFixed(1) + 'M'
+  } else if (n >= 1000) {
+    return (n / 1000).toFixed(1) + 'K'
   }
   return num
 }
