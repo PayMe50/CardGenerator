@@ -133,14 +133,21 @@ import { ref, defineEmits, watch } from 'vue'
 import { Plus, Brush } from '@element-plus/icons-vue'
 import type { UploadFile } from 'element-plus'
 
+const dialogVisible = ref(false)
+const customColor = ref('')
+
 interface FormData {
   avatar: string
   username: string
   handle: string
   content: string
-  logo: 'x' | 'twitter'
+  logo: 'x' | 'twitter' | 'twitter-blue'
   date: string
   theme: string
+  replies: string
+  retweets: string
+  likes: string
+  views: string
 }
 
 const themes = [
